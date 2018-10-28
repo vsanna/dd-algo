@@ -120,7 +120,7 @@ function sumzero(arr) {
 }
 console.log(sumzero([-4, -3, -2, -1, 0, 1, 2, 5]))
 measure(() => {
-	sumzero([-4, -3, -2, -1, 0, 1, 2, 5]
+	sumzero([-4, -3, -2, -1, 0, 1, 2, 5])
 }, { label: 'sumzero' })
 
 // refactor
@@ -140,7 +140,7 @@ function sumzero2(arr) {
 	}
 }
 measure(() => {
-	sumzero2([-4, -3, -2, -1, 0, 1, 2, 5]
+	sumzero2([-4, -3, -2, -1, 0, 1, 2, 5])
 }, { label: 'sumzero2' })
 
 
