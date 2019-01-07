@@ -16,7 +16,7 @@ var measure = function (func, options) {
         func(n);
         var t1 = perf_hooks_1.performance.now();
         var score = t1 - t0;
-        var rate = current === 0 ? '-' : 'x ' + (score / current).toFixed(3);
+        var rate = current === 0 ? "-" : "x " + (score / current).toFixed(3);
         console.log(buildMsg(label, n, score, options.withRate ? rate : null));
         current = score;
     });
@@ -30,3 +30,11 @@ var buildMsg = function (label, n, score, rate) {
     return msg;
 };
 exports["default"] = measure;
+function measureSearch(func, arr) {
+    var t0 = perf_hooks_1.performance.now();
+    func(arr);
+    var t1 = perf_hooks_1.performance.now();
+    var score = t1 - t0;
+    console.log(buildMsg(func.name, arr.size, score, null));
+}
+exports.measureSearch = measureSearch;

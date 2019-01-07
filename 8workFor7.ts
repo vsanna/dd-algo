@@ -1,3 +1,7 @@
+/*
+## Recursive: exercise
+*/
+
 function power(base: number, exp: number): number {
 	if (base < 0 || exp < 0) throw new Error('invalid argument')
 	if (exp === 0) return 1

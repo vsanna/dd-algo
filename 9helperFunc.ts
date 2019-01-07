@@ -1,3 +1,6 @@
+/*
+## Helper関数の利用
+*/
 function reverse(str: string): string {
 	// return str.split('').reverse().join('')
 	let result = ''
