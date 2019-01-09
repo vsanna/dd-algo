@@ -1,0 +1,83 @@
+## goal
+- [ ] 5 solving processes が言える/使える
+- [ ] bubble sortがかける
+- [ ] selection sortがかける
+- [ ] insertion sortがかける
+- [ ] merge sortがかける
+	- merge helperがかける
+- [ ] quick sortがかける
+	- pipot helperがかける
+- [ ] bubble, selection, insertion, merge, quick のbest/avg/worst time big-o(ランダム/リバース/ほぼソート済み)と、space big-oがわかる。
+- [ ] frequency counter が使える
+- [ ] multiple pointer が使える
+- [ ] sliding window が使える
+	- divide and conquer, dynamic programming, greedy algorithms, backtracking は別で扱う
+- [ ] 再帰をhelper関数使ってかける
+	- 最近の3pointを空で言える
+- [ ] Arrayの access/search/insert/deleteがわかる
+	- [ ] Arrayの追加のコストってどうなるの？arrayの作り直し戦略
+	- https://cdn-images-1.medium.com/max/2600/1*TXcoRpFxDTdRl0YYawE3XA.png
+- [ ] SingleyLinkedListの実装と各種メソッドのBigOがわかる
+	- imple
+		- push
+		- pop
+		- shift
+		- unshift
+		- get
+		- set
+		- insert
+		- remove 
+		- reverse
+	- arrayとの比較メリットがいえる
+- [ ] DoublyLinkedListの実装と各種メソッドのBigOがわかる	
+	- imple
+		- push
+		- pop
+		- shift
+		- unshift
+		- get
+		- set
+		- insert
+		- remove 
+		- reverse
+	- SLLとの比較メリットがいえる
+- [ ] Stackの実装と各種メソッドのBigOがわかる	
+	- imple
+		- push
+		- pop
+	- 用途とArrayとの比較が言える
+- [ ] Queueの実装と各種メソッドのBigOがわかる	
+	- imple
+		- push
+		- shift
+	- 用途とArrayとの比較が言える
+- [ ] BinarySearchTreeの実装と各種メソッドのBigOがわかる
+	- imple
+		- insert
+		- find
+		- remove ... 実装してない
+    - 用途が言える
+- [ ] BinaryHeapの実装と各種メソッドのBigOがわかる	
+	- imple
+		- insert
+		- remove(min/max)
+		- search
+	- 用途が言える
+- [ ] HashTableの実装と各種メソッドのBigOがわかる	
+	- imple
+		- set
+		- get
+		- keys
+		- values
+	- hash関数がかける
+- [ ] Graphの実装と各種メソッドのBigOがわかる	
+	- imple
+- [ ] dijkstra
+- [ ] dynamic programming
+
+## TODO
+- binaryHeapの実装があいまい。
+- hash関数の実装が曖昧
+- https://medium.com/omarelgabrys-blog/data-structures-a-quick-comparison-6689d725b3b0 を通し見する
+
+![https://cdn-images-1.medium.com/max/2600/1*TXcoRpFxDTdRl0YYawE3XA.png](https://cdn-images-1.medium.com/max/2600/1*TXcoRpFxDTdRl0YYawE3XA.png)

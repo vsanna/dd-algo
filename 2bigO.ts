@@ -3,39 +3,49 @@
 同じ結果を生む実装は何通りもある
 どれが一番いいのか。その評価を語る指標が必要
 
-## 良さ
-- [ここを見る] faster
-- less memory
-- readable
+## 「性能の良さ」とは？
+- faster ... こちらを基本的にみる
+- less memory ... ここも見るけど第二優先。(省メモリスペース)
+- readable ... 別次元の評価軸
 
 ## fasterを図るには
-1. 時間を計測 -> 大変
-2. counting operations
-  - assign
-  - calculate
-  - comparison
-- この計算もそこそこ大変  
+1. 時間を計測 -> 大変. 環境によってタイムが変わる。
+2. counting operations で評価する。演算の数
+	- ex
+  		- assign
+  		- calculate
+  		- comparison
+	- この計算もそこそこ大変  
 
 ```
-# count: 3
 n * (n + 1) / 2
+# count: 3
+# => Nがいくつであっても演算回数は定数の3. 時間は変わらない。
+# n + 1 (=xとする)
+# n * x (=yとする)
+# y / 2
 ```
 
 ```
-# count: 
-# n addition
-# n comparison
-# n calcu...
+# count: 3N + 2
+# 代入: 2
+# 加算: 2N
+# 比較: N
+# => Nが大きくなるほど演算回数が増える = 時間がかかる
+let total = 0
 for (let i = 1; i <= n; i++) {
   total += i
 }
 ```
-
-
 */
 
 import measure from './measure'
 
+// 遅い
+// time: 
+// 	 10000 -> 0.078125ms
+// 	100000 -> 0.5888671875ms
+// 1000000 -> 4.320068359375ms
 const addUpTo1 = (n) => {
 	let total = 0
 	for (let i = 0; i <= n; i++) {
@@ -46,7 +56,11 @@ const addUpTo1 = (n) => {
 measure(addUpTo1)
 
 
-
+// 早い
+// time: 
+// 	 10000 -> 0.0048828125ms
+// 	100000 -> 0.0068359375ms
+// 1000000 -> 0.006103515625ms
 const addUpTo2 = (n) => {
 	return n * (n + 1) / 2
 }

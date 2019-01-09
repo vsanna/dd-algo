@@ -19,7 +19,6 @@ import measure from './measure'
 	3. what are the outputs that should come from the solution to the problem?
 	4. can the outputs be determined from the inputs? 
 		- in other words, do I have enough info to solve the problem?
-		- 
 	5. how should i label the important pieces of data that are a part of the problems?
 - example
 	1. implement addition

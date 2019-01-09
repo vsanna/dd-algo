@@ -96,7 +96,7 @@ console.log(fractorialRecursive(10))
 /*
 - wrong case
 	1. No base case
-	2. forget to return or returnn the wrong thing
+	2. forget to return or return the wrong thing
 	2. too many stacks over Maximum call stack size
 		- Chrome: 10402
 */
