@@ -19,6 +19,27 @@ class Item {
 	) {}
 }
 
+
+/*
+# 疲れているときのPriorityQueue
+# max/minがO(1)でとれさえすればいいと考えたときのそれ。
+
+class PriorityQueue {
+	public data = []
+	enqueue(value, priority) {
+		this.data.push({value, priority})
+		this.sort()
+	}
+	dequeue() {
+		return this.data.shift()
+	}
+	sort(){
+		// logNではなく、NlogNでbubbleUp, sinkDownしちゃう
+		this.values.sort((a, b) => a.priority - b.priority)
+	}
+}
+*/
+
 class PriorityQueue {
 	public data: Array<Item> = []
 

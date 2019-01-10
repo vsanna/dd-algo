@@ -39,7 +39,7 @@ function same(arr1, arr2) {
 }
 console.log(same([1, 2, 3, 2], [9, 1, 4, 4]))
 
-// refactores
+// refactore: O(2N) = O(N) になった
 function same2(arr1, arr2) {
 	if (arr1.length !== arr2.length) return false
 
@@ -69,9 +69,9 @@ console.log(same2([-1, 2, 3, 2], [9, 1, 4, 4]))
 
 
 // anagram
-validAnagram('', '') // true
+validAnagram('', '')       // true
 validAnagram('aaz', 'zaa') // true
-validAnagram('rat', 'car')
+validAnagram('rat', 'car') // false
 
 function validAnagram(str1: string, str2: string): boolean {
 	if (str1.length !== str2.length) return false
@@ -98,7 +98,7 @@ console.log(validAnagram('aaz', 'aza'))
 
 /*
 ## multiple pointer
-- ?
+- ソート済み配列を左右から狭めていくタイプ。
 - very efficient for minimal space complexity
 */
 
@@ -124,7 +124,7 @@ measure(() => {
 }, { label: 'sumzero' })
 
 // refactor
-// 「ソート済み」を使う
+// 「ソート済み」という性質を使う
 function sumzero2(arr) {
 	let left = 0
 	let right = arr.length - 1
